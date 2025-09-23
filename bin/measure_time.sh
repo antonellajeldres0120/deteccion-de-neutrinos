@@ -4,7 +4,7 @@
 start_time=$(date "+%s")
 
 # Ejecutar el script simulate.sh para generar los archivos
-bash simulate.sh
+bash  ./bin/simulate.sh
 
 # Usamos el comando 'date' para obtener el tiempo de finalización
 end_time=$(date "+%s")
@@ -14,7 +14,7 @@ execution_time=$((end_time - start_time))
 
 # Guardar el tiempo total de ejecución en el archivo performance.txt
 # Usamos 'echo' para escribir en el archivo
-echo "Tiempo total de ejecución: $execution_time segundos" > "../results/performance.txt"
+echo "Tiempo total de ejecución: $execution_time segundos" > "$(pwd)/results/performance.txt"
 
 # Usamos 'cat' para verificar el contenido del archivo performance.txt
 cat "../results/performance.txt"
