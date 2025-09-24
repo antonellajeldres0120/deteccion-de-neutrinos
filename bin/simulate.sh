@@ -11,3 +11,4 @@ for i in $(seq -f "%04g" 1 1000); do
     # Crear el archivo con el nombre correspondiente y escribir los datos
     echo "$timestamp $neutrinos" > "../data/$i.txt"
 done
+
